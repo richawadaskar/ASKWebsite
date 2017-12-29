@@ -1,0 +1,47 @@
+.navbar {
+	/*background-image: 
+		url("img/header.jpg");
+  background: url("../img/header.jpg");*/
+}
+
+title {
+  color: green;
+}
+
+body {
+   color: blue;
+}
+
+p {
+	color: green;
+}
+
+
+#cover-photo .hero {
+  background-image: url("../img/calc.jpg");
+ /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.55))), url("../views/img/home.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.55)), url("../views/img/home.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.55)), url("../views/img/home.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.55)), url("../views/img/home.jpg");
+ */ height: 100vh;
+  max-width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: top; }
+  #cover-photo .hero .row .hero-text {
+    text-align: left; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    #cover-photo .hero .row .hero-text h1 {
+      color: black;
+      font: 6.5em 'Proxima Nova', sans-serif;
+      letter-spacing: 2px;
+      margin-bottom: 3px; }
+    #cover-photo .hero .row .hero-text p {
+      color: black;
+      font: 1.5em 'Proxima Nova', sans-serif; }
+
