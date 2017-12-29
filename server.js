@@ -31,14 +31,9 @@ hbs.registerHelper('getCurrentYear', () => {
 	return new Date().getFullYear();
 });
 
-hbs.registerHelper('screamIt', (text) => {
-	return text.toUpperCase();
-});
-
 app.get('/', (req, res) => {
-	res.render('home.hbs', {
-		pageTitle: 'Richard\'s Home Page',
-		welcomeMessage: 'Welcome home Richard fans. Get ready for an adventure!'
+	res.render('index.hbs', {
+		pageTitle: 'UCSB ASK'
 	});
 });
 
@@ -50,33 +45,27 @@ app.get('/about', (req, res) => {
 
 app.get('/values', (req, res) => {
 	res.render('values.hbs', {
-		pageTitle: 'About Page'
+		pageTitle: 'Our Values'
 	});	
 });
 
 app.get('/recruitment', (req, res) => {
 	res.render('recruitment.hbs', {
-		pageTitle: 'About Page'
+		pageTitle: 'Recruitment'
 	});	
 });
 
 app.get('/members', (req, res) => {
 	res.render('members.hbs', {
-		pageTitle: 'About Page'
+		pageTitle: 'Members'
 	});	
 });
 
 
 app.get('/connect', (req, res) => {
 	res.render('connect.hbs', {
-		pageTitle: 'About Page'
-	});	
-});
-
-app.get('/gallery', (req, res) => {
-	res.render('gallery.hbs', {
-		pageTitle: 'About Page'
-	});	
+		pageTitle: 'Connect'
+	});
 });
 
 app.listen(port, () => {
